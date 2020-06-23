@@ -59,11 +59,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// Use this method to save data, release shared resources, and store enough scene-specific state information
 		// to restore the scene back to its current state.
 	}
-
-
+	
 }
 
-extension SceneDelegate:FUIAuthDelegate {
+extension SceneDelegate: FUIAuthDelegate {
 	func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
 		authViewController.pushViewController(MainViewController(), animated: true)
 	}

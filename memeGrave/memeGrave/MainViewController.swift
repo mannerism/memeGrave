@@ -8,13 +8,13 @@
 
 import UIKit
 
-class MainViewController:UIViewController {
-	//MARK: - Properties
-	//MARK: - Init
+class MainViewController: UIViewController {
+	// MARK: - Properties
+	// MARK: - Init
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .red
 	}
-	//MARK: - Handlers
-	//MARK: - Constraints
+	// MARK: - Handlers
+	// MARK: - Constraints
 }
