@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='memeGraveUITests.xctest' tests='4' failures='0'>
+  <testsuite name='memeGraveTests.memeGraveTests' tests='2' failures='0'>
+    <testcase classname='memeGraveTests.memeGraveTests' name='testExample' time='0.002'/>
+    <testcase classname='memeGraveTests.memeGraveTests' name='testPerformanceExample' time='0.321'/>
+  </testsuite>
+  <testsuite name='memeGraveUITests.memeGraveUITests' tests='2' failures='0'>
+    <testcase classname='memeGraveUITests.memeGraveUITests' name='testExample' time='1.661'/>
+    <testcase classname='memeGraveUITests.memeGraveUITests' name='testLaunchPerformance' time='15.397'/>
+  </testsuite>
+</testsuites>
