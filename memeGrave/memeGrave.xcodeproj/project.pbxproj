@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09754B145B6B0562E359B71A /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E2EC903F24E9004745948A /* Pods_memeGrave_memeGraveUITests.framework */; };
+		7387156DFF2CB94489250393 /* Pods_memeGrave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CB6CDBFA6B977DA9B42B35 /* Pods_memeGrave.framework */; };
+		783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047B524A0D5BD00B49F97 /* AppDelegate.swift */; };
+		783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047B724A0D5BD00B49F97 /* SceneDelegate.swift */; };
+		783047BC24A0D5BF00B49F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783047BB24A0D5BF00B49F97 /* Assets.xcassets */; };
+		783047BF24A0D5BF00B49F97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783047BE24A0D5BF00B49F97 /* Preview Assets.xcassets */; };
+		783047C224A0D5BF00B49F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783047C024A0D5BF00B49F97 /* LaunchScreen.storyboard */; };
+		783047CD24A0D5BF00B49F97 /* memeGraveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047CC24A0D5BF00B49F97 /* memeGraveTests.swift */; };
+		783047D824A0D5BF00B49F97 /* memeGraveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047D724A0D5BF00B49F97 /* memeGraveUITests.swift */; };
+		783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047E524A0D5E200B49F97 /* MainViewController.swift */; };
+		783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783047E724A0D87000B49F97 /* GoogleService-Info.plist */; };
+		D514EBA2D65ACD98E97E7E1E /* Pods_memeGraveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C479EF8FA9217C1B8958B0 /* Pods_memeGraveTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		783047C924A0D5BF00B49F97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783047AA24A0D5BD00B49F97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783047B124A0D5BD00B49F97;
+			remoteInfo = memeGrave;
+		};
+		783047D424A0D5BF00B49F97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783047AA24A0D5BD00B49F97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783047B124A0D5BD00B49F97;
+			remoteInfo = memeGrave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25CB6CDBFA6B977DA9B42B35 /* Pods_memeGrave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGrave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B39DC7157696D1B6EBA3860 /* Pods-memeGrave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.debug.xcconfig"; sourceTree = "<group>"; };
+		46C479EF8FA9217C1B8958B0 /* Pods_memeGraveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGraveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBAB235B1EB2E084570010D /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50CFD9048CF0ACC661FEEE9C /* Pods-memeGrave-memeGraveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.release.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EE6B770090C6C7F6B6C132B /* Pods-memeGraveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.debug.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61CC899F4416EA73E629F8D6 /* Pods-memeGraveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.release.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.release.xcconfig"; sourceTree = "<group>"; };
+		75E2EC903F24E9004745948A /* Pods_memeGrave_memeGraveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGrave_memeGraveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783047B224A0D5BD00B49F97 /* memeGrave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memeGrave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		783047B524A0D5BD00B49F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		783047B724A0D5BD00B49F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		783047BB24A0D5BF00B49F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		783047BE24A0D5BF00B49F97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		783047C124A0D5BF00B49F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		783047C324A0D5BF00B49F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783047C824A0D5BF00B49F97 /* memeGraveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memeGraveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783047CC24A0D5BF00B49F97 /* memeGraveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memeGraveTests.swift; sourceTree = "<group>"; };
+		783047CE24A0D5BF00B49F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783047D324A0D5BF00B49F97 /* memeGraveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memeGraveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783047D724A0D5BF00B49F97 /* memeGraveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memeGraveUITests.swift; sourceTree = "<group>"; };
+		783047D924A0D5BF00B49F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783047E524A0D5E200B49F97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		783047E724A0D87000B49F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E43C46E63A7A2C4CCDD1B586 /* Pods-memeGrave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.release.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		783047AF24A0D5BD00B49F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7387156DFF2CB94489250393 /* Pods_memeGrave.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783047C524A0D5BF00B49F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D514EBA2D65ACD98E97E7E1E /* Pods_memeGraveTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783047D024A0D5BF00B49F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09754B145B6B0562E359B71A /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		783047A924A0D5BD00B49F97 = {
+			isa = PBXGroup;
+			children = (
+				783047B424A0D5BD00B49F97 /* memeGrave */,
+				783047CB24A0D5BF00B49F97 /* memeGraveTests */,
+				783047D624A0D5BF00B49F97 /* memeGraveUITests */,
+				783047B324A0D5BD00B49F97 /* Products */,
+				90C119B2157CC96EBA63313C /* Pods */,
+				B057BCEF0F7AFDE15F972D78 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		783047B324A0D5BD00B49F97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				783047B224A0D5BD00B49F97 /* memeGrave.app */,
+				783047C824A0D5BF00B49F97 /* memeGraveTests.xctest */,
+				783047D324A0D5BF00B49F97 /* memeGraveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		783047B424A0D5BD00B49F97 /* memeGrave */ = {
+			isa = PBXGroup;
+			children = (
+				783047B524A0D5BD00B49F97 /* AppDelegate.swift */,
+				783047E524A0D5E200B49F97 /* MainViewController.swift */,
+				783047B724A0D5BD00B49F97 /* SceneDelegate.swift */,
+				783047BB24A0D5BF00B49F97 /* Assets.xcassets */,
+				783047C024A0D5BF00B49F97 /* LaunchScreen.storyboard */,
+				783047C324A0D5BF00B49F97 /* Info.plist */,
+				783047E724A0D87000B49F97 /* GoogleService-Info.plist */,
+				783047BD24A0D5BF00B49F97 /* Preview Content */,
+			);
+			path = memeGrave;
+			sourceTree = "<group>";
+		};
+		783047BD24A0D5BF00B49F97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				783047BE24A0D5BF00B49F97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		783047CB24A0D5BF00B49F97 /* memeGraveTests */ = {
+			isa = PBXGroup;
+			children = (
+				783047CC24A0D5BF00B49F97 /* memeGraveTests.swift */,
+				783047CE24A0D5BF00B49F97 /* Info.plist */,
+			);
+			path = memeGraveTests;
+			sourceTree = "<group>";
+		};
+		783047D624A0D5BF00B49F97 /* memeGraveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				783047D724A0D5BF00B49F97 /* memeGraveUITests.swift */,
+				783047D924A0D5BF00B49F97 /* Info.plist */,
+			);
+			path = memeGraveUITests;
+			sourceTree = "<group>";
+		};
+		90C119B2157CC96EBA63313C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B39DC7157696D1B6EBA3860 /* Pods-memeGrave.debug.xcconfig */,
+				E43C46E63A7A2C4CCDD1B586 /* Pods-memeGrave.release.xcconfig */,
+				4DBAB235B1EB2E084570010D /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */,
+				50CFD9048CF0ACC661FEEE9C /* Pods-memeGrave-memeGraveUITests.release.xcconfig */,
+				5EE6B770090C6C7F6B6C132B /* Pods-memeGraveTests.debug.xcconfig */,
+				61CC899F4416EA73E629F8D6 /* Pods-memeGraveTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B057BCEF0F7AFDE15F972D78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25CB6CDBFA6B977DA9B42B35 /* Pods_memeGrave.framework */,
+				75E2EC903F24E9004745948A /* Pods_memeGrave_memeGraveUITests.framework */,
+				46C479EF8FA9217C1B8958B0 /* Pods_memeGraveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		783047B124A0D5BD00B49F97 /* memeGrave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783047DC24A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGrave" */;
+			buildPhases = (
+				720A12ED86B30B1C30A67548 /* [CP] Check Pods Manifest.lock */,
+				783047AE24A0D5BD00B49F97 /* Sources */,
+				783047AF24A0D5BD00B49F97 /* Frameworks */,
+				783047B024A0D5BD00B49F97 /* Resources */,
+				C3AAC4A628A8EF1177B32FD8 /* [CP] Embed Pods Frameworks */,
+				E109EABE0CAC4FF6122361D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memeGrave;
+			productName = memeGrave;
+			productReference = 783047B224A0D5BD00B49F97 /* memeGrave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		783047C724A0D5BF00B49F97 /* memeGraveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783047DF24A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGraveTests" */;
+			buildPhases = (
+				B328FF83FF58B92D648957F6 /* [CP] Check Pods Manifest.lock */,
+				783047C424A0D5BF00B49F97 /* Sources */,
+				783047C524A0D5BF00B49F97 /* Frameworks */,
+				783047C624A0D5BF00B49F97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783047CA24A0D5BF00B49F97 /* PBXTargetDependency */,
+			);
+			name = memeGraveTests;
+			productName = memeGraveTests;
+			productReference = 783047C824A0D5BF00B49F97 /* memeGraveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		783047D224A0D5BF00B49F97 /* memeGraveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783047E224A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGraveUITests" */;
+			buildPhases = (
+				1BB770AA08E5EB5C5B17DC40 /* [CP] Check Pods Manifest.lock */,
+				783047CF24A0D5BF00B49F97 /* Sources */,
+				783047D024A0D5BF00B49F97 /* Frameworks */,
+				783047D124A0D5BF00B49F97 /* Resources */,
+				8AAFF714CB83C6320153C99A /* [CP] Embed Pods Frameworks */,
+				F624C366F15D5C75EDDD91FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783047D524A0D5BF00B49F97 /* PBXTargetDependency */,
+			);
+			name = memeGraveUITests;
+			productName = memeGraveUITests;
+			productReference = 783047D324A0D5BF00B49F97 /* memeGraveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		783047AA24A0D5BD00B49F97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = memeGrave;
+				TargetAttributes = {
+					783047B124A0D5BD00B49F97 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					783047C724A0D5BF00B49F97 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 783047B124A0D5BD00B49F97;
+					};
+					783047D224A0D5BF00B49F97 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 783047B124A0D5BD00B49F97;
+					};
+				};
+			};
+			buildConfigurationList = 783047AD24A0D5BD00B49F97 /* Build configuration list for PBXProject "memeGrave" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 783047A924A0D5BD00B49F97;
+			productRefGroup = 783047B324A0D5BD00B49F97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				783047B124A0D5BD00B49F97 /* memeGrave */,
+				783047C724A0D5BF00B49F97 /* memeGraveTests */,
+				783047D224A0D5BF00B49F97 /* memeGraveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783047B024A0D5BD00B49F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783047C224A0D5BF00B49F97 /* LaunchScreen.storyboard in Resources */,
+				783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */,
+				783047BF24A0D5BF00B49F97 /* Preview Assets.xcassets in Resources */,
+				783047BC24A0D5BF00B49F97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783047C624A0D5BF00B49F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783047D124A0D5BF00B49F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB770AA08E5EB5C5B17DC40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memeGrave-memeGraveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		720A12ED86B30B1C30A67548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memeGrave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAFF714CB83C6320153C99A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B328FF83FF58B92D648957F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memeGraveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3AAC4A628A8EF1177B32FD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E109EABE0CAC4FF6122361D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F624C366F15D5C75EDDD91FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		783047AE24A0D5BD00B49F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */,
+				783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */,
+				783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783047C424A0D5BF00B49F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783047CD24A0D5BF00B49F97 /* memeGraveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783047CF24A0D5BF00B49F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783047D824A0D5BF00B49F97 /* memeGraveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		783047CA24A0D5BF00B49F97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783047B124A0D5BD00B49F97 /* memeGrave */;
+			targetProxy = 783047C924A0D5BF00B49F97 /* PBXContainerItemProxy */;
+		};
+		783047D524A0D5BF00B49F97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783047B124A0D5BD00B49F97 /* memeGrave */;
+			targetProxy = 783047D424A0D5BF00B49F97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		783047C024A0D5BF00B49F97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				783047C124A0D5BF00B49F97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		783047DA24A0D5BF00B49F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		783047DB24A0D5BF00B49F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		783047DD24A0D5BF00B49F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B39DC7157696D1B6EBA3860 /* Pods-memeGrave.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"memeGrave/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AV259SP85;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = memeGrave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inbastards.memeGrave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		783047DE24A0D5BF00B49F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43C46E63A7A2C4CCDD1B586 /* Pods-memeGrave.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"memeGrave/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AV259SP85;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = memeGrave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inbastards.memeGrave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		783047E024A0D5BF00B49F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE6B770090C6C7F6B6C132B /* Pods-memeGraveTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AV259SP85;
+				INFOPLIST_FILE = memeGraveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inbastards.memeGraveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memeGrave.app/memeGrave";
+			};
+			name = Debug;
+		};
+		783047E124A0D5BF00B49F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CC899F4416EA73E629F8D6 /* Pods-memeGraveTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AV259SP85;
+				INFOPLIST_FILE = memeGraveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inbastards.memeGraveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memeGrave.app/memeGrave";
+			};
+			name = Release;
+		};
+		783047E324A0D5BF00B49F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBAB235B1EB2E084570010D /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AV259SP85;
+				INFOPLIST_FILE = memeGraveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inbastards.memeGraveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = memeGrave;
+			};
+			name = Debug;
+		};
+		783047E424A0D5BF00B49F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CFD9048CF0ACC661FEEE9C /* Pods-memeGrave-memeGraveUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AV259SP85;
+				INFOPLIST_FILE = memeGraveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inbastards.memeGraveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = memeGrave;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		783047AD24A0D5BD00B49F97 /* Build configuration list for PBXProject "memeGrave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783047DA24A0D5BF00B49F97 /* Debug */,
+				783047DB24A0D5BF00B49F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783047DC24A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGrave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783047DD24A0D5BF00B49F97 /* Debug */,
+				783047DE24A0D5BF00B49F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783047DF24A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGraveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783047E024A0D5BF00B49F97 /* Debug */,
+				783047E124A0D5BF00B49F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783047E224A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGraveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783047E324A0D5BF00B49F97 /* Debug */,
+				783047E424A0D5BF00B49F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 783047AA24A0D5BD00B49F97 /* Project object */;
+}
