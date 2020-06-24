@@ -13,7 +13,7 @@ import Firebase
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 	var window: UIWindow?
-	var authViewController:UINavigationController!
+	var authViewController:BaseNavigationController!
 
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		let authUI = FUIAuth.defaultAuthUI()
@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 			FUIGoogleAuth()
 		]
 		authUI?.providers = providers
-		authViewController = authUI?.authViewController()
-		authViewController.navigationBar.isHidden = true
+		authViewController = BaseNavigationController(authUI: authUI!)
+//		authViewController.navigationBar.isHidden = true
 		if let windowScene = scene as? UIWindowScene {
 		    let window = UIWindow(windowScene: windowScene)
 		    window.rootViewController = authViewController
@@ -63,6 +63,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 extension SceneDelegate: FUIAuthDelegate {
 	func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
-		authViewController.pushViewController(MainViewController(), animated: true)
+//		authViewController.pushViewController(MainViewController(), animated: true)
 	}
 }

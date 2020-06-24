@@ -18,6 +18,7 @@
 		783047D824A0D5BF00B49F97 /* memeGraveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047D724A0D5BF00B49F97 /* memeGraveUITests.swift */; };
 		783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047E524A0D5E200B49F97 /* MainViewController.swift */; };
 		783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783047E724A0D87000B49F97 /* GoogleService-Info.plist */; };
+		78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AED54E24A214C70050FEBD /* BaseNavigationController.swift */; };
 		D514EBA2D65ACD98E97E7E1E /* Pods_memeGraveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C479EF8FA9217C1B8958B0 /* Pods_memeGraveTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		783047D924A0D5BF00B49F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783047E524A0D5E200B49F97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		783047E724A0D87000B49F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78AED54E24A214C70050FEBD /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E43C46E63A7A2C4CCDD1B586 /* Pods-memeGrave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.release.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				783047B524A0D5BD00B49F97 /* AppDelegate.swift */,
+				78AED54E24A214C70050FEBD /* BaseNavigationController.swift */,
 				783047E524A0D5E200B49F97 /* MainViewController.swift */,
 				783047B724A0D5BD00B49F97 /* SceneDelegate.swift */,
 				783047BB24A0D5BF00B49F97 /* Assets.xcassets */,
@@ -455,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */,
 				783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */,
 				783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */,
 				783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */,
