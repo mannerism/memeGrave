@@ -20,6 +20,9 @@
 		783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783047E724A0D87000B49F97 /* GoogleService-Info.plist */; };
 		78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AED54E24A214C70050FEBD /* BaseNavigationController.swift */; };
 		78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BD24B99DEA00327C7A /* Extensions.swift */; };
+		78BF46C024B9C83400327C7A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BF24B9C83400327C7A /* Utilities.swift */; };
+		78BF46C524B9D35A00327C7A /* Main_Background_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */; };
+		78BF46C724B9D42800327C7A /* BackgroundVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */; };
 		BCCF7D9C053EE77661704A2C /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AB0A38D2DAD0C9BB5ED736 /* Pods_memeGrave_memeGraveUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		783047E724A0D87000B49F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78AED54E24A214C70050FEBD /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		78BF46BD24B99DEA00327C7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		78BF46BF24B9C83400327C7A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main_Background_Video.mp4; sourceTree = "<group>"; };
+		78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVideoController.swift; sourceTree = "<group>"; };
 		7D18BEBDA2A7F4CE49F5EBE3 /* Pods-memeGrave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.debug.xcconfig"; sourceTree = "<group>"; };
 		8063D4DCA9ECED2DB5DA61A6 /* Pods-memeGraveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.debug.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CACD91F543916A96785F0602 /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,12 +131,14 @@
 				78BF46BC24B99DD800327C7A /* Utilities */,
 				783047B524A0D5BD00B49F97 /* AppDelegate.swift */,
 				78AED54E24A214C70050FEBD /* BaseNavigationController.swift */,
+				78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */,
 				783047E524A0D5E200B49F97 /* MainViewController.swift */,
 				783047B724A0D5BD00B49F97 /* SceneDelegate.swift */,
 				783047BB24A0D5BF00B49F97 /* Assets.xcassets */,
 				783047C024A0D5BF00B49F97 /* LaunchScreen.storyboard */,
 				783047C324A0D5BF00B49F97 /* Info.plist */,
 				783047E724A0D87000B49F97 /* GoogleService-Info.plist */,
+				78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */,
 				783047BD24A0D5BF00B49F97 /* Preview Content */,
 			);
 			path = memeGrave;
@@ -166,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				78BF46BD24B99DEA00327C7A /* Extensions.swift */,
+				78BF46BF24B9C83400327C7A /* Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -308,6 +317,7 @@
 			files = (
 				783047C224A0D5BF00B49F97 /* LaunchScreen.storyboard in Resources */,
 				783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */,
+				78BF46C524B9D35A00327C7A /* Main_Background_Video.mp4 in Resources */,
 				783047BF24A0D5BF00B49F97 /* Preview Assets.xcassets in Resources */,
 				783047BC24A0D5BF00B49F97 /* Assets.xcassets in Resources */,
 			);
@@ -507,11 +517,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78BF46C024B9C83400327C7A /* Utilities.swift in Sources */,
 				78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */,
 				78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */,
 				783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */,
 				783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */,
 				783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */,
+				78BF46C724B9D42800327C7A /* BackgroundVideoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

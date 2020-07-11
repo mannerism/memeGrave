@@ -12,40 +12,63 @@ import FirebaseUI
 class BaseNavigationController: FUIAuthPickerViewController {
 	// MARK: - Properties
 	let imageView: UIImageView = {
-		let image = UIImage(named: "")
+		let image = UIImage(named: "Main_Background_Image")
 		let imageView = UIImageView(image: image)
-		imageView.contentMode = .scaleAspectFit
+		imageView.contentMode = .scaleAspectFill
+		imageView.backgroundColor = .purple
 		return imageView
 	}()
+
+	var scrollView: UIView!
+	var contentView: UIView!
+	var backgroundViedeoController: BackgroundVideoController!
+
 	// MARK: - Init
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setup()
 		addViews()
 		setConstraints()
+		configureBackgroundVideoController()
 	}
+
 	// MARK: - Handlers
 	func setup() {
-		let scrollView = view.subviews[0]
-		let contentView = scrollView.subviews[0]
+		scrollView = view.subviews[0]
+		contentView = scrollView.subviews[0]
 		contentView.backgroundColor = .clear
-		scrollView.backgroundColor = .white
+		scrollView.backgroundColor = .clear
 	}
 
 	func addViews() {
-		view.addSubview(imageView)
 	}
 
 	func setConstraints() {
-		imageViewConstraints()
+	}
+
+	func configureBackgroundVideoController() {
+		if backgroundViedeoController == nil {
+			backgroundViedeoController = BackgroundVideoController()
+			addChild(backgroundViedeoController)
+			scrollView.insertSubview(backgroundViedeoController.view, at: 0)
+			backgroundViedeoControllerConstraints()
+		}
 	}
 
 	// MARK: - Constraints
 	func imageViewConstraints() {
 		imageView.translatesAutoresizingMaskIntoConstraints = false
-		imageView.widthAnchor.constraint(equalToConstant: CGFloat(30)).isActive = true
-		imageView.heightAnchor.constraint(equalToConstant: CGFloat(30)).isActive = true
-		imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-		imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+		imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+		imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+		imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+		imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+	}
+
+	func backgroundViedeoControllerConstraints() {
+		backgroundViedeoController.view.translatesAutoresizingMaskIntoConstraints = false
+		backgroundViedeoController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+		backgroundViedeoController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+		backgroundViedeoController.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+		backgroundViedeoController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 }
