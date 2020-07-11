@@ -11,13 +11,6 @@ import FirebaseUI
 
 class BaseNavigationController: FUIAuthPickerViewController {
 	// MARK: - Properties
-	lazy var loginButton: UIButton = {
-		let button = UIButton(type: .system)
-		button.layer.cornerRadius = CGFloat(5.adjustHeight)
-		button.addTarget(self, action: #selector(handleLoingButton), for: .touchUpInside)
-		return button
-	}()
-
 	var scrollView: UIView!
 	var contentView: UIView!
 	var backgroundViedeoController: BackgroundVideoController!
@@ -45,9 +38,6 @@ class BaseNavigationController: FUIAuthPickerViewController {
 	func setConstraints() {
 	}
 
-	@objc func handleLoingButton() {
-	}
-
 	func configureBackgroundVideoController() {
 		if backgroundViedeoController == nil {
 			backgroundViedeoController = BackgroundVideoController()
@@ -65,4 +55,5 @@ class BaseNavigationController: FUIAuthPickerViewController {
 		backgroundViedeoController.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
 		backgroundViedeoController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
+
 }
