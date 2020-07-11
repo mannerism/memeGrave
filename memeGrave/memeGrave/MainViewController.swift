@@ -13,7 +13,6 @@ class MainViewController: UIViewController {
 	// MARK: - Init
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .red
 	}
 	// MARK: - Handlers
 	// MARK: - Constraints
