@@ -10,7 +10,7 @@ target 'memeGrave' do
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Facebook'
   pod 'FirebaseUI/Google'  
-
+  pod 'SwiftLint'
 
   target 'memeGraveTests' do
     inherit! :search_paths

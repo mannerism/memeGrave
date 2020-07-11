@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseUI
 
-class BaseNavigationController: FUIAuthPickerViewController{
+class BaseNavigationController: FUIAuthPickerViewController {
 	// MARK: - Properties
 	// MARK: - Init
 	override func viewDidLoad() {
@@ -17,7 +17,6 @@ class BaseNavigationController: FUIAuthPickerViewController{
 		setup()
 	}
 	// MARK: - Handlers
-	
 	func setup() {
 		let scrollView = view.subviews[0]
 		let contentView = scrollView.subviews[0]

@@ -13,12 +13,12 @@ import Firebase
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 	var window: UIWindow?
-	var authViewController:BaseNavigationController!
+	var authViewController: BaseNavigationController!
 
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		let authUI = FUIAuth.defaultAuthUI()
 		authUI?.delegate = self
-		let providers : [FUIAuthProvider] = [
+		let providers: [FUIAuthProvider] = [
 			FUIGoogleAuth()
 		]
 		authUI?.providers = providers
