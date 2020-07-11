@@ -23,6 +23,7 @@
 		78BF46C024B9C83400327C7A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BF24B9C83400327C7A /* Utilities.swift */; };
 		78BF46C524B9D35A00327C7A /* Main_Background_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */; };
 		78BF46C724B9D42800327C7A /* BackgroundVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */; };
+		78BF46C924B9DA5700327C7A /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46C824B9DA5700327C7A /* CustomText.swift */; };
 		BCCF7D9C053EE77661704A2C /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AB0A38D2DAD0C9BB5ED736 /* Pods_memeGrave_memeGraveUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		78BF46BF24B9C83400327C7A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main_Background_Video.mp4; sourceTree = "<group>"; };
 		78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVideoController.swift; sourceTree = "<group>"; };
+		78BF46C824B9DA5700327C7A /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		7D18BEBDA2A7F4CE49F5EBE3 /* Pods-memeGrave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.debug.xcconfig"; sourceTree = "<group>"; };
 		8063D4DCA9ECED2DB5DA61A6 /* Pods-memeGraveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.debug.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CACD91F543916A96785F0602 /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				78BF46BD24B99DEA00327C7A /* Extensions.swift */,
 				78BF46BF24B9C83400327C7A /* Utilities.swift */,
+				78BF46C824B9DA5700327C7A /* CustomText.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				78BF46C024B9C83400327C7A /* Utilities.swift in Sources */,
 				78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */,
 				78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */,
+				78BF46C924B9DA5700327C7A /* CustomText.swift in Sources */,
 				783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */,
 				783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */,
 				783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */,
