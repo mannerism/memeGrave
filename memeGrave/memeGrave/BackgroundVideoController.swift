@@ -13,16 +13,6 @@ class BackgroundVideoController: UIViewController {
 	// MARK: - Properties
 	var player: AVPlayer?
 
-	lazy var loginButton: UIButton = {
-		let button = UIButton(type: .system)
-		let attrText = MemeGraveText.make("LOGIN", .bold, 20.adjustFontSize, .white)
-		button.layer.cornerRadius = CGFloat(5.adjustHeight)
-		button.addTarget(self, action: #selector(handleLoginButton), for: .touchUpInside)
-		button.setAttributedTitle(attrText, for: .normal)
-		button.setBackgroundColor(color: .red, forState: .normal)
-		return button
-	}()
-
 	// MARK: - Init
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -33,11 +23,9 @@ class BackgroundVideoController: UIViewController {
 	}
 
 	func addViews() {
-		view.addSubview(loginButton)
 	}
 
 	func setConstraints() {
-		loginButtonConstraints()
 	}
 
 	func playBackgroundVideo() {
@@ -57,19 +45,6 @@ class BackgroundVideoController: UIViewController {
 	@objc func playerItemDidReachEnd() {
 		player!.seek(to: CMTime.zero)
 	}
-
-	@objc func handleLoginButton() {
-		print("handle Login button")
-	}
-
 	// MARK: - Handlers
-
 	// MARK: - Constraints
-	func loginButtonConstraints() {
-		loginButton.translatesAutoresizingMaskIntoConstraints = false
-		loginButton.widthAnchor.constraint(equalToConstant: CGFloat(200.adjustWidth)).isActive = true
-		loginButton.heightAnchor.constraint(equalToConstant: CGFloat(50.adjustHeight)).isActive = true
-		loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-	}
 }

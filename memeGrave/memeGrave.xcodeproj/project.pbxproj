@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2029E9B4FC3D93FF277035BA /* Pods_memeGraveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4180BBE9BC000D6208CC55 /* Pods_memeGraveTests.framework */; };
 		3767074B718E55F3D9B23804 /* Pods_memeGrave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC567EAA1EB093F3B16C1426 /* Pods_memeGrave.framework */; };
+		781E3B2424C06892007418D2 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E3B2324C06892007418D2 /* ColorCodes.swift */; };
+		781E3B2624C0705D007418D2 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E3B2524C0705D007418D2 /* LeftPaddedTextField.swift */; };
 		783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047B524A0D5BD00B49F97 /* AppDelegate.swift */; };
 		783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047B724A0D5BD00B49F97 /* SceneDelegate.swift */; };
 		783047BC24A0D5BF00B49F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783047BB24A0D5BF00B49F97 /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 		783047D824A0D5BF00B49F97 /* memeGraveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047D724A0D5BF00B49F97 /* memeGraveUITests.swift */; };
 		783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047E524A0D5E200B49F97 /* MainViewController.swift */; };
 		783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783047E724A0D87000B49F97 /* GoogleService-Info.plist */; };
+		78A4B70B24C058A30052147D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4B70A24C058A30052147D /* LoginController.swift */; };
 		78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AED54E24A214C70050FEBD /* BaseNavigationController.swift */; };
 		78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BD24B99DEA00327C7A /* Extensions.swift */; };
 		78BF46C024B9C83400327C7A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BF24B9C83400327C7A /* Utilities.swift */; };
@@ -49,6 +52,8 @@
 		3017FECBF4593578F44B68A6 /* Pods-memeGrave-memeGraveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.release.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		310F6470815991D2B8D91A33 /* Pods-memeGraveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.release.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C4180BBE9BC000D6208CC55 /* Pods_memeGraveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGraveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		781E3B2324C06892007418D2 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
+		781E3B2524C0705D007418D2 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
 		783047B224A0D5BD00B49F97 /* memeGrave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memeGrave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783047B524A0D5BD00B49F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		783047B724A0D5BD00B49F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		783047D924A0D5BF00B49F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783047E524A0D5E200B49F97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		783047E724A0D87000B49F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78A4B70A24C058A30052147D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		78AED54E24A214C70050FEBD /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		78BF46BD24B99DEA00327C7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		78BF46BF24B9C83400327C7A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				783047B524A0D5BD00B49F97 /* AppDelegate.swift */,
 				78AED54E24A214C70050FEBD /* BaseNavigationController.swift */,
 				78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */,
+				78A4B70A24C058A30052147D /* LoginController.swift */,
 				783047E524A0D5E200B49F97 /* MainViewController.swift */,
 				783047B724A0D5BD00B49F97 /* SceneDelegate.swift */,
 				783047BB24A0D5BF00B49F97 /* Assets.xcassets */,
@@ -178,6 +185,8 @@
 				78BF46BD24B99DEA00327C7A /* Extensions.swift */,
 				78BF46BF24B9C83400327C7A /* Utilities.swift */,
 				78BF46C824B9DA5700327C7A /* CustomText.swift */,
+				781E3B2324C06892007418D2 /* ColorCodes.swift */,
+				781E3B2524C0705D007418D2 /* LeftPaddedTextField.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -524,8 +533,11 @@
 				78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */,
 				78AED54F24A214C70050FEBD /* BaseNavigationController.swift in Sources */,
 				78BF46C924B9DA5700327C7A /* CustomText.swift in Sources */,
+				78A4B70B24C058A30052147D /* LoginController.swift in Sources */,
 				783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */,
+				781E3B2424C06892007418D2 /* ColorCodes.swift in Sources */,
 				783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */,
+				781E3B2624C0705D007418D2 /* LeftPaddedTextField.swift in Sources */,
 				783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */,
 				78BF46C724B9D42800327C7A /* BackgroundVideoController.swift in Sources */,
 			);
