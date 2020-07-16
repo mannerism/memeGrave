@@ -22,6 +22,10 @@ class BackgroundVideoController: UIViewController {
 		setConstraints()
 	}
 
+	deinit {
+		print("deinit video controller")
+	}
+
 	func addViews() {
 	}
 

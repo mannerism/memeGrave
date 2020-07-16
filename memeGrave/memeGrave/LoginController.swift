@@ -50,6 +50,7 @@ class LoginController: UIViewController {
 		addViews()
 		setConstraints()
 	}
+
 	// MARK: - Handlers
 	func setup() {
 		view.backgroundColor = .clear

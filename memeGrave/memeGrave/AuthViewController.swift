@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseUI
 
-class BaseNavigationController: FUIAuthPickerViewController {
+class AuthViewController: FUIAuthPickerViewController {
 	// MARK: - Properties
 	var scrollView: UIScrollView!
 	var contentView: UIView!
