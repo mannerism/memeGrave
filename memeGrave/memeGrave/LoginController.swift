@@ -6,12 +6,13 @@
 //  Copyright © 2020 memeGrave. All rights reserved.
 //
 import UIKit
+import Firebase
 
 class LoginController: UIViewController {
 	// MARK: - Properties
 	lazy var loginButton: UIButton = {
 		let button = UIButton(type: .system)
-		let attrText = MemeGraveText.make("Sign in with Email", .bold, 13.adjF, .pantone)
+		let attrText = MemeGraveText.make("Sign up with Email", .bold, 13.adjF, .pantone)
 		button.layer.cornerRadius = CGFloat(5.adjH)
 		button.addTarget(self, action: #selector(handleLoginButton), for: .touchUpInside)
 		button.setAttributedTitle(attrText, for: .normal)
@@ -70,6 +71,18 @@ class LoginController: UIViewController {
 
 	@objc func handleLoginButton() {
 		print("handle Login button")
+		guard let email = emailTextField.text,
+			    let password = passwordTextField.text else {return}
+		Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+			if error != nil {
+				//어 에러야
+				print(error)
+			} else {
+				//어 성공이야
+				
+				print(result)
+			}
+		}
 	}
 
 	// MARK: - Constraints
