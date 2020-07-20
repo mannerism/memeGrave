@@ -6,6 +6,7 @@
 //  Copyright © 2020 memeGrave. All rights reserved.
 //
 import UIKit
+import FirebaseAuth
 import Firebase
 
 class LoginController: UIViewController {
@@ -27,6 +28,7 @@ class LoginController: UIViewController {
 		textF.layer.cornerRadius = CGFloat(5.adjH)
 		textF.layer.borderColor = UIColor.pantone.cgColor
 		textF.textContentType = .emailAddress
+		textF.autocapitalizationType = .none
 		textF.attributedPlaceholder = MemeGraveText.make("Enter email", .bold, 13.adjF, .pantone)
 		textF.defaultTextAttributes = MemeGraveText.attributes(.bold, 13.adjF, .pantone)
 		return textF
@@ -39,6 +41,7 @@ class LoginController: UIViewController {
 		textF.layer.borderColor = UIColor.pantone.cgColor
 		textF.attributedPlaceholder = MemeGraveText.make("Enter password", .bold, 13.adjF, .pantone)
 		textF.textContentType = .password
+		textF.autocapitalizationType = .none
 		textF.isSecureTextEntry = true
 		textF.defaultTextAttributes = MemeGraveText.attributes(.bold, 13.adjF, .pantone)
 		return textF
@@ -72,16 +75,48 @@ class LoginController: UIViewController {
 	@objc func handleLoginButton() {
 		print("handle Login button")
 		guard let email = emailTextField.text,
-			    let password = passwordTextField.text else {return}
-		Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+			let password = passwordTextField.text else {return}
+		signIn(email: email, password: password)
+	}
+
+	private func signIn(email: String, password: String) {
+		Auth.auth().signIn(withEmail: email, password: password) { [weak self] (_, error) in
+			guard let strongSelf = self else {return}
 			if error != nil {
-				//어 에러야
-				print(error)
+				strongSelf.handleSignInError(error, email: email, password: password)
+			} else {
+				strongSelf.dismiss(animated: true, completion: nil)
+			}
+		}
+	}
+
+	private func createUser(email: String, password: String) {
+		Auth.auth().createUser(withEmail: email, password: password) { [weak self] (result, error) in
+			guard let strongSelf = self else {return}
+			if error != nil {
+				print(error!)
 			} else {
 				//어 성공이야
-				
-				print(result)
+				let dataBase = Firestore.firestore()
+				dataBase.collection("users").addDocument(data: [
+					"email": email,
+					"uid": result!.user.uid
+				]) { (error) in
+					if error != nil {
+						// show error message
+					} else {
+						strongSelf.dismiss(animated: true, completion: nil)
+					}
+				}
 			}
+		}
+	}
+
+	private func handleSignInError(_ error: Error?, email: String, password: String) {
+		guard let error = error else {return}
+		if let errorCode = AuthErrorCode(rawValue: error._code),
+			errorCode == .userNotFound {
+			createUser(email: email, password: password)
 		}
 	}
 
