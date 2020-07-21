@@ -19,7 +19,11 @@ class MainViewController: UINavigationController {
 		super.viewDidLoad()
 		setup()
 		configureAuthController()
-		perform(#selector(showAuthController), with: nil, afterDelay: 0.1)
+	}
+
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		showAuthController()
 	}
 
 	// MARK: - Handlers
@@ -39,7 +43,7 @@ class MainViewController: UINavigationController {
 
 	@objc func showAuthController() {
 		authViewController.modalPresentationStyle = .fullScreen
-		present(authViewController, animated: true, completion: nil)
+		present(authViewController, animated: false, completion: nil)
 	}
 	// MARK: - Constraints
 }

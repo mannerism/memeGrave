@@ -117,6 +117,8 @@ class LoginController: UIViewController {
 		if let errorCode = AuthErrorCode(rawValue: error._code),
 			errorCode == .userNotFound {
 			createUser(email: email, password: password)
+		} else {
+
 		}
 	}
 
