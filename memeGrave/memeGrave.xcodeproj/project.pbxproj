@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		4A632D66F4965FE46AA72DDD /* Pods_memeGraveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D25D51ED2FE4D858321482 /* Pods_memeGraveTests.framework */; };
 		6799FDF1693E3340F115099E /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DD806AF61A5CFAF60E2B1C /* Pods_memeGrave_memeGraveUITests.framework */; };
-		78048E7624C672E800005A39 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78048E7524C672E800005A39 /* LoginController.swift */; };
 		781E3B2424C06892007418D2 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E3B2324C06892007418D2 /* ColorCodes.swift */; };
 		781E3B2624C0705D007418D2 /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E3B2524C0705D007418D2 /* LeftPaddedTextField.swift */; };
+		7825C33324CD667700FFCC24 /* MGUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825C33224CD667700FFCC24 /* MGUserDefaults.swift */; };
 		783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047B524A0D5BD00B49F97 /* AppDelegate.swift */; };
 		783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047B724A0D5BD00B49F97 /* SceneDelegate.swift */; };
 		783047BC24A0D5BF00B49F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783047BB24A0D5BF00B49F97 /* Assets.xcassets */; };
@@ -21,6 +21,7 @@
 		783047D824A0D5BF00B49F97 /* memeGraveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047D724A0D5BF00B49F97 /* memeGraveUITests.swift */; };
 		783047E624A0D5E200B49F97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783047E524A0D5E200B49F97 /* MainViewController.swift */; };
 		783047E824A0D87000B49F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783047E724A0D87000B49F97 /* GoogleService-Info.plist */; };
+		786DA9CD24CD710C00C6F291 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DA9CC24CD710C00C6F291 /* LoginController.swift */; };
 		78B67D6B24C07BC50027CFF2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B67D6A24C07BC50027CFF2 /* AuthViewController.swift */; };
 		78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BD24B99DEA00327C7A /* Extensions.swift */; };
 		78BF46C024B9C83400327C7A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46BF24B9C83400327C7A /* Utilities.swift */; };
@@ -54,9 +55,9 @@
 		4ED55943C9404660517CE8B1 /* Pods-memeGraveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.release.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A197F80D7F5E5A4054B45D2 /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77D25D51ED2FE4D858321482 /* Pods_memeGraveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGraveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78048E7524C672E800005A39 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		781E3B2324C06892007418D2 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
 		781E3B2524C0705D007418D2 /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
+		7825C33224CD667700FFCC24 /* MGUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGUserDefaults.swift; sourceTree = "<group>"; };
 		783047B224A0D5BD00B49F97 /* memeGrave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memeGrave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783047B524A0D5BD00B49F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		783047B724A0D5BD00B49F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		783047D924A0D5BF00B49F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783047E524A0D5E200B49F97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		783047E724A0D87000B49F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		786DA9CC24CD710C00C6F291 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		78B67D6A24C07BC50027CFF2 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		78BF46BD24B99DEA00327C7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		78BF46BF24B9C83400327C7A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -121,6 +123,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7825C33424CD6D2900FFCC24 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */,
+				78B67D6A24C07BC50027CFF2 /* AuthViewController.swift */,
+				786DA9CC24CD710C00C6F291 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7825C33524CD6D5900FFCC24 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		783047A924A0D5BD00B49F97 = {
 			isa = PBXGroup;
 			children = (
@@ -146,12 +165,11 @@
 		783047B424A0D5BD00B49F97 /* memeGrave */ = {
 			isa = PBXGroup;
 			children = (
+				7825C33524CD6D5900FFCC24 /* Protocols */,
 				78BF46BC24B99DD800327C7A /* Utilities */,
+				7825C33424CD6D2900FFCC24 /* Login */,
 				783047B524A0D5BD00B49F97 /* AppDelegate.swift */,
 				783047B724A0D5BD00B49F97 /* SceneDelegate.swift */,
-				78B67D6A24C07BC50027CFF2 /* AuthViewController.swift */,
-				78048E7524C672E800005A39 /* LoginController.swift */,
-				78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */,
 				783047E524A0D5E200B49F97 /* MainViewController.swift */,
 				783047BB24A0D5BF00B49F97 /* Assets.xcassets */,
 				783047C024A0D5BF00B49F97 /* LaunchScreen.storyboard */,
@@ -197,6 +215,7 @@
 				78BF46C824B9DA5700327C7A /* CustomText.swift */,
 				781E3B2324C06892007418D2 /* ColorCodes.swift */,
 				781E3B2524C0705D007418D2 /* LeftPaddedTextField.swift */,
+				7825C33224CD667700FFCC24 /* MGUserDefaults.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -529,12 +548,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78048E7624C672E800005A39 /* LoginController.swift in Sources */,
 				78B67D6B24C07BC50027CFF2 /* AuthViewController.swift in Sources */,
+				786DA9CD24CD710C00C6F291 /* LoginController.swift in Sources */,
 				78BF46C024B9C83400327C7A /* Utilities.swift in Sources */,
 				78BF46BE24B99DEA00327C7A /* Extensions.swift in Sources */,
 				78BF46C924B9DA5700327C7A /* CustomText.swift in Sources */,
 				783047B624A0D5BD00B49F97 /* AppDelegate.swift in Sources */,
+				7825C33324CD667700FFCC24 /* MGUserDefaults.swift in Sources */,
 				781E3B2424C06892007418D2 /* ColorCodes.swift in Sources */,
 				783047B824A0D5BD00B49F97 /* SceneDelegate.swift in Sources */,
 				781E3B2624C0705D007418D2 /* LeftPaddedTextField.swift in Sources */,

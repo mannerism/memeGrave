@@ -28,6 +28,10 @@ class AuthViewController: FUIAuthPickerViewController {
 		configureTapGestureRecognizer()
 	}
 
+	deinit {
+		print("auth vc removed")
+	}
+
 	// MARK: - Handlers
 	func setup() {
 		scrollView = view.subviews[0] as? UIScrollView

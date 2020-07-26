@@ -10,7 +10,7 @@ import UIKit
 import FirebaseUI
 import Firebase
 
-class MainViewController: UINavigationController {
+class MainViewController: UIViewController {
 	// MARK: - Properties
 	var authViewController: AuthViewController!
 
@@ -19,16 +19,17 @@ class MainViewController: UINavigationController {
 		super.viewDidLoad()
 		setup()
 		configureAuthController()
+		configureNavigationController()
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		showAuthController()
+		perform(#selector(showAuthController), with: nil, afterDelay: 0.1)
 	}
 
 	// MARK: - Handlers
 	func setup() {
-		view.backgroundColor = .white
+		view.backgroundColor = .red
 	}
 
 	func configureAuthController() {
@@ -41,9 +42,25 @@ class MainViewController: UINavigationController {
 		authViewController = AuthViewController(authUI: authUI!)
 	}
 
+	func configureNavigationController() {
+		navigationController?.setNavigationBarHidden(false, animated: false)
+		navigationController?.navigationBar.barTintColor = .darkGray
+		self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(handleLogoutButton))
+	}
+
+	@objc func addTapped() {
+		showAuthController()
+	}
+
+	@objc func handleLogoutButton() {
+		MGUserDefaults.setIsLoggedIn(false)
+		showAuthController()
+	}
+
 	@objc func showAuthController() {
+		guard !MGUserDefaults.getIsLoggedIn() else {return}
 		authViewController.modalPresentationStyle = .fullScreen
-		present(authViewController, animated: false, completion: nil)
+		present(authViewController, animated: true, completion: nil)
 	}
 	// MARK: - Constraints
 }

@@ -55,6 +55,10 @@ class LoginController: UIViewController {
 		setConstraints()
 	}
 
+	deinit {
+		print("login vc removed")
+	}
+
 	// MARK: - Handlers
 	func setup() {
 		view.backgroundColor = .clear
@@ -83,31 +87,25 @@ class LoginController: UIViewController {
 		Auth.auth().signIn(withEmail: email, password: password) { [weak self] (_, error) in
 			guard let strongSelf = self else {return}
 			if error != nil {
+				//아이디 없음
 				strongSelf.handleSignInError(error, email: email, password: password)
 			} else {
-				strongSelf.dismiss(animated: true, completion: nil)
+				//로그인 성공
+				MGUserDefaults.setIsLoggedIn(true)
+				strongSelf.dismiss(animated: true)
 			}
 		}
 	}
 
 	private func createUser(email: String, password: String) {
-		Auth.auth().createUser(withEmail: email, password: password) { [weak self] (result, error) in
+		Auth.auth().createUser(withEmail: email, password: password) { [weak self] (_, error) in
 			guard let strongSelf = self else {return}
 			if error != nil {
 				print(error!)
 			} else {
-				//어 성공이야
-				let dataBase = Firestore.firestore()
-				dataBase.collection("users").addDocument(data: [
-					"email": email,
-					"uid": result!.user.uid
-				]) { (error) in
-					if error != nil {
-						// show error message
-					} else {
-						strongSelf.dismiss(animated: true, completion: nil)
-					}
-				}
+				//회원 가입 성공
+				MGUserDefaults.setIsLoggedIn(true)
+				strongSelf.dismiss(animated: true, completion: nil)
 			}
 		}
 	}
