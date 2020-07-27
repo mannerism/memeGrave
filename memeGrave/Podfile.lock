@@ -223,6 +223,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - CBFlashyTabBarController (0.8.3)
   - FBSDKCoreKit (5.15.1):
     - FBSDKCoreKit/Basics (= 5.15.1)
     - FBSDKCoreKit/Core (= 5.15.1)
@@ -368,6 +369,7 @@ PODS:
   - SwiftLint (0.39.2)
 
 DEPENDENCIES:
+  - CBFlashyTabBarController
   - Firebase/Analytics
   - Firebase/Core
   - Firebase/Firestore
@@ -381,6 +383,7 @@ SPEC REPOS:
     - abseil
     - AppAuth
     - BoringSSL-GRPC
+    - CBFlashyTabBarController
     - FBSDKCoreKit
     - FBSDKLoginKit
     - Firebase
@@ -408,6 +411,7 @@ SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  CBFlashyTabBarController: bc6b11dd4cbc9b54785c8944156e2f4d4f03b088
   FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
   FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
   Firebase: ed042590caa0029392257529a8003c25ee82bc18
@@ -431,6 +435,6 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: f5d2a54dc05ee3f031b39b67d36a0fedfbbb9e28
+PODFILE CHECKSUM: fe16ec665e65bb9c78e9e3cdb1389d430978da4c
 
 COCOAPODS: 1.9.1
