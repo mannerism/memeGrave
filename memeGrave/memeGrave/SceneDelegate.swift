@@ -11,22 +11,12 @@ import FirebaseUI
 import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
 	var window: UIWindow?
-	var authViewController:UINavigationController!
-
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-		let authUI = FUIAuth.defaultAuthUI()
-		authUI?.delegate = self
-		let providers : [FUIAuthProvider] = [
-			FUIGoogleAuth()
-		]
-		authUI?.providers = providers
-		authViewController = authUI?.authViewController()
-		authViewController.navigationBar.isHidden = true
 		if let windowScene = scene as? UIWindowScene {
 		    let window = UIWindow(windowScene: windowScene)
-		    window.rootViewController = authViewController
+				let nav = UINavigationController(rootViewController: MainViewController())
+		    window.rootViewController = nav
 		    self.window = window
 		    window.makeKeyAndVisible()
 		}
@@ -58,11 +48,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// Called as the scene transitions from the foreground to the background.
 		// Use this method to save data, release shared resources, and store enough scene-specific state information
 		// to restore the scene back to its current state.
-	}
-}
-
-extension SceneDelegate: FUIAuthDelegate {
-	func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
-		authViewController.pushViewController(MainViewController(), animated: true)
 	}
 }

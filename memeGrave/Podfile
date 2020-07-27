@@ -9,8 +9,11 @@ target 'memeGrave' do
   pod 'Firebase/Analytics'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Facebook'
-  pod 'FirebaseUI/Google'  
-
+  pod 'FirebaseUI/Google'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'  
+  pod 'SwiftLint'
+  pod 'CBFlashyTabBarController'
 
   target 'memeGraveTests' do
     inherit! :search_paths
@@ -20,5 +23,13 @@ target 'memeGrave' do
   target 'memeGraveUITests' do
     # Pods for testing
   end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9'
+    end
+  end
+end
 
 end
