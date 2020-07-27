@@ -108,6 +108,7 @@ class LoginController: UIViewController {
 			guard let strongSelf = self else {return}
 			if error != nil {
 				//아이디 없음
+				strongSelf.hideActivitiyIndicator()
 				strongSelf.handleSignInError(error, email: email, password: password)
 			} else {
 				//로그인 성공
@@ -119,10 +120,12 @@ class LoginController: UIViewController {
 	}
 
 	private func createUser(email: String, password: String) {
+		showActivityIndicator()
 		Auth.auth().createUser(withEmail: email, password: password) { [weak self] (_, error) in
 			guard let strongSelf = self else {return}
 			if error != nil {
 				print(error!)
+				strongSelf.hideActivitiyIndicator()
 			} else {
 				//회원 가입 성공
 				MGUserDefaults.setIsLoggedIn(true)
@@ -138,7 +141,7 @@ class LoginController: UIViewController {
 			errorCode == .userNotFound {
 			createUser(email: email, password: password)
 		} else {
-
+			hideActivitiyIndicator()
 		}
 	}
 
