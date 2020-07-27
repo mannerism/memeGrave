@@ -11,6 +11,14 @@ import Firebase
 
 class LoginController: UIViewController {
 	// MARK: - Properties
+	let activityIndicatorView: UIActivityIndicatorView = {
+		let indicator = UIActivityIndicatorView(style: .large)
+		indicator.color = .white
+		indicator.backgroundColor = .transparentGrey
+		indicator.layer.cornerRadius = CGFloat(5.adjH)
+		return indicator
+	}()
+
 	lazy var loginButton: UIButton = {
 		let button = UIButton(type: .system)
 		let attrText = MemeGraveText.make("Sign up with Email", .bold, 13.adjF, .pantone)
@@ -40,7 +48,7 @@ class LoginController: UIViewController {
 		textF.layer.cornerRadius = CGFloat(5.adjH)
 		textF.layer.borderColor = UIColor.pantone.cgColor
 		textF.attributedPlaceholder = MemeGraveText.make("Enter password", .bold, 13.adjF, .pantone)
-		textF.textContentType = .password
+		textF.textContentType = .oneTimeCode
 		textF.autocapitalizationType = .none
 		textF.isSecureTextEntry = true
 		textF.defaultTextAttributes = MemeGraveText.attributes(.bold, 13.adjF, .pantone)
@@ -76,6 +84,17 @@ class LoginController: UIViewController {
 		passwordTextFieldConstraints()
 	}
 
+	func showActivityIndicator() {
+		view.addSubview(activityIndicatorView)
+		activityIndicatorView.startAnimating()
+		activityIndicatorViewConstraints()
+	}
+
+	func hideActivitiyIndicator() {
+		activityIndicatorView.stopAnimating()
+		activityIndicatorView.removeFromSuperview()
+	}
+
 	@objc func handleLoginButton() {
 		print("handle Login button")
 		guard let email = emailTextField.text,
@@ -84,6 +103,7 @@ class LoginController: UIViewController {
 	}
 
 	private func signIn(email: String, password: String) {
+		showActivityIndicator()
 		Auth.auth().signIn(withEmail: email, password: password) { [weak self] (_, error) in
 			guard let strongSelf = self else {return}
 			if error != nil {
@@ -92,6 +112,7 @@ class LoginController: UIViewController {
 			} else {
 				//로그인 성공
 				MGUserDefaults.setIsLoggedIn(true)
+				strongSelf.hideActivitiyIndicator()
 				strongSelf.dismiss(animated: true)
 			}
 		}
@@ -105,6 +126,7 @@ class LoginController: UIViewController {
 			} else {
 				//회원 가입 성공
 				MGUserDefaults.setIsLoggedIn(true)
+				strongSelf.hideActivitiyIndicator()
 				strongSelf.dismiss(animated: true, completion: nil)
 			}
 		}
@@ -143,5 +165,13 @@ class LoginController: UIViewController {
 		passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
 		passwordTextField.bottomAnchor.constraint(equalTo: loginButton.topAnchor, constant: -CGFloat(10.adjH)).isActive = true
 		passwordTextField.heightAnchor.constraint(equalToConstant: CGFloat(40.adjH)).isActive = true
+	}
+
+	func activityIndicatorViewConstraints() {
+		activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+		activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+		activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+		activityIndicatorView.widthAnchor.constraint(equalToConstant: CGFloat(100.adjW)).isActive = true
+		activityIndicatorView.heightAnchor.constraint(equalToConstant: CGFloat(100.adjH)).isActive = true
 	}
 }
