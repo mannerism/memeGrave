@@ -21,6 +21,15 @@ class BackgroundVideoController: UIViewController {
 		addViews()
 		setConstraints()
 	}
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		player?.play()
+	}
+
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		player?.pause()
+	}
 
 	deinit {
 		print("deinit video controller")

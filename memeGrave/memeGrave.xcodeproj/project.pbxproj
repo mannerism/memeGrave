@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		047EA4F109347AD1FB1A337C /* Pods_memeGrave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FAD051DB18C69433F36D8B /* Pods_memeGrave.framework */; };
-		62A17959B60FEE8E63BD8E17 /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28227533598108F257498626 /* Pods_memeGrave_memeGraveUITests.framework */; };
+		04DE6916CF3651B5912A721C /* Pods_memeGrave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ADEDE002ACC2085D8C716C /* Pods_memeGrave.framework */; };
+		278BE060112ACED994D2D955 /* Pods_memeGraveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC35748A8A25BE6F82DB67BF /* Pods_memeGraveTests.framework */; };
+		456FD12CBFC3567DEEFF627A /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CECE35113E90E4F76683A8 /* Pods_memeGrave_memeGraveUITests.framework */; };
 		7808F1A224CF03E4009EF166 /* NewEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7808F1A124CF03E4009EF166 /* NewEventsViewController.swift */; };
 		7808F1A424CF046A009EF166 /* BestEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7808F1A324CF046A009EF166 /* BestEventsViewController.swift */; };
 		7808F1A624CF05A6009EF166 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7808F1A524CF05A6009EF166 /* SettingsViewController.swift */; };
@@ -31,7 +32,6 @@
 		78BF46C524B9D35A00327C7A /* Main_Background_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */; };
 		78BF46C724B9D42800327C7A /* BackgroundVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */; };
 		78BF46C924B9DA5700327C7A /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BF46C824B9DA5700327C7A /* CustomText.swift */; };
-		C1418E9C1B8DC65F749C5281 /* Pods_memeGraveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B93C71F69C97FA5A0F278C /* Pods_memeGraveTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10FAD051DB18C69433F36D8B /* Pods_memeGrave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGrave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		246A8574A25FC5275CFE2BBD /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		28227533598108F257498626 /* Pods_memeGrave_memeGraveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGrave_memeGraveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FE76015D66332443CA9F008 /* Pods-memeGrave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.release.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.release.xcconfig"; sourceTree = "<group>"; };
-		3C9951EEE7609F5E64339D0A /* Pods-memeGraveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.release.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.release.xcconfig"; sourceTree = "<group>"; };
-		4433A1A31DBC494FE66A57EB /* Pods-memeGraveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.debug.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4F294F3996449BFFC616CDAE /* Pods-memeGrave-memeGraveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.release.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26CECE35113E90E4F76683A8 /* Pods_memeGrave_memeGraveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGrave_memeGraveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E555B5E07FE4492D70114F /* Pods-memeGrave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.release.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.release.xcconfig"; sourceTree = "<group>"; };
+		77C49C8C6C0C2C559E556269 /* Pods-memeGrave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.debug.xcconfig"; sourceTree = "<group>"; };
 		7808F1A124CF03E4009EF166 /* NewEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventsViewController.swift; sourceTree = "<group>"; };
 		7808F1A324CF046A009EF166 /* BestEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestEventsViewController.swift; sourceTree = "<group>"; };
 		7808F1A524CF05A6009EF166 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +83,12 @@
 		78BF46C424B9D35A00327C7A /* Main_Background_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main_Background_Video.mp4; sourceTree = "<group>"; };
 		78BF46C624B9D42800327C7A /* BackgroundVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVideoController.swift; sourceTree = "<group>"; };
 		78BF46C824B9DA5700327C7A /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
-		79A5D0DF5C347C280DF77C10 /* Pods-memeGrave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave/Pods-memeGrave.debug.xcconfig"; sourceTree = "<group>"; };
-		F6B93C71F69C97FA5A0F278C /* Pods_memeGraveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGraveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9109AE00BD87FA615AADCBD8 /* Pods-memeGrave-memeGraveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.release.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1AF66C0E70974428E5AEADB /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGrave-memeGraveUITests.debug.xcconfig"; path = "Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC35748A8A25BE6F82DB67BF /* Pods_memeGraveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGraveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C221845245997726A9D5C017 /* Pods-memeGraveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.release.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0ADEDE002ACC2085D8C716C /* Pods_memeGrave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memeGrave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF47DDF47D2EB82A6E7F54F3 /* Pods-memeGraveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeGraveTests.debug.xcconfig"; path = "Target Support Files/Pods-memeGraveTests/Pods-memeGraveTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047EA4F109347AD1FB1A337C /* Pods_memeGrave.framework in Frameworks */,
+				04DE6916CF3651B5912A721C /* Pods_memeGrave.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1418E9C1B8DC65F749C5281 /* Pods_memeGraveTests.framework in Frameworks */,
+				278BE060112ACED994D2D955 /* Pods_memeGraveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62A17959B60FEE8E63BD8E17 /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */,
+				456FD12CBFC3567DEEFF627A /* Pods_memeGrave_memeGraveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +168,7 @@
 				783047D624A0D5BF00B49F97 /* memeGraveUITests */,
 				783047B324A0D5BD00B49F97 /* Products */,
 				90C119B2157CC96EBA63313C /* Pods */,
-				DF59442D8EBACE057947611E /* Frameworks */,
+				ABC9D360F85A60D09BAC6153 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,22 +246,22 @@
 		90C119B2157CC96EBA63313C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79A5D0DF5C347C280DF77C10 /* Pods-memeGrave.debug.xcconfig */,
-				2FE76015D66332443CA9F008 /* Pods-memeGrave.release.xcconfig */,
-				246A8574A25FC5275CFE2BBD /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */,
-				4F294F3996449BFFC616CDAE /* Pods-memeGrave-memeGraveUITests.release.xcconfig */,
-				4433A1A31DBC494FE66A57EB /* Pods-memeGraveTests.debug.xcconfig */,
-				3C9951EEE7609F5E64339D0A /* Pods-memeGraveTests.release.xcconfig */,
+				77C49C8C6C0C2C559E556269 /* Pods-memeGrave.debug.xcconfig */,
+				34E555B5E07FE4492D70114F /* Pods-memeGrave.release.xcconfig */,
+				B1AF66C0E70974428E5AEADB /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */,
+				9109AE00BD87FA615AADCBD8 /* Pods-memeGrave-memeGraveUITests.release.xcconfig */,
+				FF47DDF47D2EB82A6E7F54F3 /* Pods-memeGraveTests.debug.xcconfig */,
+				C221845245997726A9D5C017 /* Pods-memeGraveTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DF59442D8EBACE057947611E /* Frameworks */ = {
+		ABC9D360F85A60D09BAC6153 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10FAD051DB18C69433F36D8B /* Pods_memeGrave.framework */,
-				28227533598108F257498626 /* Pods_memeGrave_memeGraveUITests.framework */,
-				F6B93C71F69C97FA5A0F278C /* Pods_memeGraveTests.framework */,
+				E0ADEDE002ACC2085D8C716C /* Pods_memeGrave.framework */,
+				26CECE35113E90E4F76683A8 /* Pods_memeGrave_memeGraveUITests.framework */,
+				BC35748A8A25BE6F82DB67BF /* Pods_memeGraveTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,13 +273,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783047DC24A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGrave" */;
 			buildPhases = (
-				3A9F42D587748F3AA69B4547 /* [CP] Check Pods Manifest.lock */,
+				006CFEB2BE8F70DA6CFF61E6 /* [CP] Check Pods Manifest.lock */,
 				78BF46BB24B9685C00327C7A /* SwiftLint */,
 				783047AE24A0D5BD00B49F97 /* Sources */,
 				783047AF24A0D5BD00B49F97 /* Frameworks */,
 				783047B024A0D5BD00B49F97 /* Resources */,
-				98D580DD75487CDD97457A8B /* [CP] Embed Pods Frameworks */,
-				6C8978BC3C746CACF38E946C /* [CP] Copy Pods Resources */,
+				0C8E8284B95B72CA0DB18FC8 /* [CP] Embed Pods Frameworks */,
+				869FBEC890DB8734BBD32EA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,7 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783047DF24A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGraveTests" */;
 			buildPhases = (
-				85B1589CB559BA1EBE9BD7BB /* [CP] Check Pods Manifest.lock */,
+				E7133818EA63B966EA4F3964 /* [CP] Check Pods Manifest.lock */,
 				78F5F67E24B964B7001F76AD /* Run Script */,
 				783047C424A0D5BF00B49F97 /* Sources */,
 				783047C524A0D5BF00B49F97 /* Frameworks */,
@@ -314,12 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783047E224A0D5BF00B49F97 /* Build configuration list for PBXNativeTarget "memeGraveUITests" */;
 			buildPhases = (
-				C76FC27EFC10BAA4DED237EA /* [CP] Check Pods Manifest.lock */,
+				73F5909C7E605092A86E4C3F /* [CP] Check Pods Manifest.lock */,
 				783047CF24A0D5BF00B49F97 /* Sources */,
 				783047D024A0D5BF00B49F97 /* Frameworks */,
 				783047D124A0D5BF00B49F97 /* Resources */,
-				A19ACA99158887F48A4D56C6 /* [CP] Embed Pods Frameworks */,
-				6165BA5DCB64853B2C7BDE37 /* [CP] Copy Pods Resources */,
+				42954C3FE4550B805886C3DA /* [CP] Embed Pods Frameworks */,
+				9495236143C2F30FA7A2DBA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -404,7 +404,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A9F42D587748F3AA69B4547 /* [CP] Check Pods Manifest.lock */ = {
+		006CFEB2BE8F70DA6CFF61E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,38 +426,60 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6165BA5DCB64853B2C7BDE37 /* [CP] Copy Pods Resources */ = {
+		0C8E8284B95B72CA0DB18FC8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C8978BC3C746CACF38E946C /* [CP] Copy Pods Resources */ = {
+		42954C3FE4550B805886C3DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F5909C7E605092A86E4C3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memeGrave-memeGraveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78BF46BB24B9685C00327C7A /* SwiftLint */ = {
@@ -496,7 +518,41 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		85B1589CB559BA1EBE9BD7BB /* [CP] Check Pods Manifest.lock */ = {
+		869FBEC890DB8734BBD32EA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9495236143C2F30FA7A2DBA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7133818EA63B966EA4F3964 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -512,62 +568,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-memeGraveTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98D580DD75487CDD97457A8B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave/Pods-memeGrave-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A19ACA99158887F48A4D56C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memeGrave-memeGraveUITests/Pods-memeGrave-memeGraveUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C76FC27EFC10BAA4DED237EA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-memeGrave-memeGraveUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -760,7 +760,7 @@
 		};
 		783047DD24A0D5BF00B49F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79A5D0DF5C347C280DF77C10 /* Pods-memeGrave.debug.xcconfig */;
+			baseConfigurationReference = 77C49C8C6C0C2C559E556269 /* Pods-memeGrave.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -781,7 +781,7 @@
 		};
 		783047DE24A0D5BF00B49F97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FE76015D66332443CA9F008 /* Pods-memeGrave.release.xcconfig */;
+			baseConfigurationReference = 34E555B5E07FE4492D70114F /* Pods-memeGrave.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,7 +802,7 @@
 		};
 		783047E024A0D5BF00B49F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4433A1A31DBC494FE66A57EB /* Pods-memeGraveTests.debug.xcconfig */;
+			baseConfigurationReference = FF47DDF47D2EB82A6E7F54F3 /* Pods-memeGraveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -825,7 +825,7 @@
 		};
 		783047E124A0D5BF00B49F97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C9951EEE7609F5E64339D0A /* Pods-memeGraveTests.release.xcconfig */;
+			baseConfigurationReference = C221845245997726A9D5C017 /* Pods-memeGraveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -848,7 +848,7 @@
 		};
 		783047E324A0D5BF00B49F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 246A8574A25FC5275CFE2BBD /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */;
+			baseConfigurationReference = B1AF66C0E70974428E5AEADB /* Pods-memeGrave-memeGraveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -869,7 +869,7 @@
 		};
 		783047E424A0D5BF00B49F97 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F294F3996449BFFC616CDAE /* Pods-memeGrave-memeGraveUITests.release.xcconfig */;
+			baseConfigurationReference = 9109AE00BD87FA615AADCBD8 /* Pods-memeGrave-memeGraveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
