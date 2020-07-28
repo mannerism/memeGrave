@@ -48,9 +48,9 @@ class LoginController: UIViewController {
 		textF.layer.cornerRadius = CGFloat(5.adjH)
 		textF.layer.borderColor = UIColor.pantone.cgColor
 		textF.attributedPlaceholder = MemeGraveText.make("Enter password", .bold, 13.adjF, .pantone)
-		textF.textContentType = .oneTimeCode
-		textF.autocapitalizationType = .none
+		textF.textContentType = .emailAddress
 		textF.isSecureTextEntry = true
+		textF.autocapitalizationType = .none
 		textF.defaultTextAttributes = MemeGraveText.attributes(.bold, 13.adjF, .pantone)
 		return textF
 	}()

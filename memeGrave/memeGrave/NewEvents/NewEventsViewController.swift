@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
-class NewEventsViewController: UIViewController {
+class NewEventsViewController: ASDKViewController<ASDisplayNode> {
 	// MARK: - Properties
 	// MARK: - Init
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		view.backgroundColor = .purple
+	override init() {
+		super.init(node: ASDisplayNode())
+		node.backgroundColor = .purple
+	}
+
+	required init?(coder: NSCoder) {
+		return nil
 	}
 
 	// MARK: - Handlers

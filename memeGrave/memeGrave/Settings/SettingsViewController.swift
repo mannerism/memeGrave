@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: ASDKViewController<ASDisplayNode> {
 	// MARK: - Properties
 	// MARK: - Init
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		view.backgroundColor = .pantone
+	override init() {
+		super.init(node: ASDisplayNode())
+		self.node.backgroundColor = .pantone
+	}
+
+	required init?(coder: NSCoder) {
+		return nil
 	}
 	// MARK: - Handlers
 	// MARK: - Constraints
