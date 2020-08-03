@@ -52,9 +52,7 @@ class MainViewController: UIViewController {
 	}
 
 	func configureNavigationController() {
-		navigationController?.setNavigationBarHidden(false, animated: false)
-		navigationController?.navigationBar.isTranslucent = true
-		self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(handleLogoutButton))
+		navigationController?.setNavigationBarHidden(true, animated: false)
 	}
 
 	func configureNewEventsController() {
